@@ -17,6 +17,13 @@ sha256sums=('28c8d5bcaca83b7e945d6f52e91d3941f6d67e489d8a8484cc20546a8149bbf4'
 prepare() {
   cd "$srcdir/$pkgname-$pkgver"
   cp "$srcdir/config.h" config.h
+
+  for patch in "$srcdir"/*.diff; do
+    if [ -f "$patch" ]; then
+      echo "Applying $(basename "$patch")"
+      patch -p1 --quiet < "$patch"
+    fi
+  done
 }
 
 build() {
