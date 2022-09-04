@@ -1,6 +1,6 @@
 pkgname=dwm
 pkgver=6.3
-pkgrel=4
+pkgrel=5
 pkgdesc="A dynamic window manager for X"
 url="https://dwm.suckless.org"
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ sha256sums=('28c8d5bcaca83b7e945d6f52e91d3941f6d67e489d8a8484cc20546a8149bbf4'
             'badaa028529b1fba1fd7f9a84f3b64f31190466c858011b53e2f7b70c6a3078d'
             '45ffab26cf29e993f4ae5efd7262c6b65ccb7f12daaba2a33a86f6eb50fd0391'
             'bdbfe23f2ca8bcc04ed2e0f08d0389aa3f7874b236177d6a81432ac8d5e56d60'
-            '3c16197a3a70640848b7f99aceefc155baff13ecd832f572674649a4608e2ee4')
+            'a3e7cbfae2d62a6dad5175ff1b699ecb26030d5c13ec88071192758bb6ad1f38')
 
 prepare() {
   cd "$srcdir/$pkgname-$pkgver"
